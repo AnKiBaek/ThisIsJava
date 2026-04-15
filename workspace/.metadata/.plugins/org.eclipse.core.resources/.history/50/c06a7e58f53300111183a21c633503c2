@@ -1,0 +1,27 @@
+package practice9_01.sec.exam03;
+
+public class A {
+public void method1(int arg) {
+	int var= 1;
+	
+	// 로컬클래스 로컬 변수 사용시 값 바꿔치기 안됨.
+	class B {
+		void method2() {
+			System.out.println("arg: " + arg);
+			System.out.println("var: " + var);
+		}
+	}
+	//로컬클래스에서 로컬변수가 한번들어가면 로컬변수의값은 파이널 특성을 가진다. 때문에 수정할경우 오류가 발생한다.
+	//외부에서도 바꿀수없다. 즉 읽기전용으로사용해야한다.
+	
+	arg =2;
+	var =2;
+	System.out.println("arg: " + arg);
+	System.out.println("var: " + var);
+}
+
+public static void main(String[] args) {
+	A a = new A();
+	a.method1(3);
+}
+}

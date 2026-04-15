@@ -1,0 +1,21 @@
+package practice5_3.sec10;
+
+public class AdvancedForExample {
+	
+	
+	public static int sumScores(int[]arr) {
+		
+		for(int i : arr) {
+			int sum  = 0;
+			sum+= i;
+		}
+		
+		return sum;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

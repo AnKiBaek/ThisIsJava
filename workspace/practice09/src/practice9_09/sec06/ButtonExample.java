@@ -1,0 +1,28 @@
+package practice9_09.sec06;
+
+public class ButtonExample {
+
+	public static void main(String[] args) {
+		Button btnOk = new Button();
+		Button btnCancel = new Button();
+		
+		class OkListener implements Button.ClickListener{
+			@Override
+			public void onClick() {
+				System.out.println("OK");
+			}
+		}
+		class CancelListener implements Button.ClickListener{
+			@Override
+			public void onClick() {
+				System.out.println("CANCEL");
+			}
+		}
+		
+		btnOk.setClickListener(new OkListener());
+		btnCancel.setClickListener(new CancelListener());
+		
+		btnOk.click();
+		btnCancel.click();
+	}
+}

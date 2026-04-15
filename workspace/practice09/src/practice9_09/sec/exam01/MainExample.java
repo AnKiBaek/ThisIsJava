@@ -1,0 +1,15 @@
+package practice9_09.sec.exam01;
+
+public class MainExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		A a =new A();
+		
+		A.B b = a.new B();
+		
+		b.methodB();
+	}
+
+}

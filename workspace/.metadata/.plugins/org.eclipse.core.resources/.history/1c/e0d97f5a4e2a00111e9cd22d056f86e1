@@ -1,0 +1,20 @@
+package practice5_1.sec10;
+
+public class AdvancedForExample {
+
+	public static void main(String[] args) {
+		
+		int [] scores = {91,39,49,40,30};
+		
+		int sum = 0 ;
+		//인덱스가 필요없는경우사용
+		for(int i : scores) {
+			sum += i;
+			
+		}
+		
+		System.out.println(sum);
+
+	}
+
+}

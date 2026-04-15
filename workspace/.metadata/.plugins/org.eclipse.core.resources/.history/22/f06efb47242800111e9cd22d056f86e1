@@ -1,0 +1,38 @@
+package ch02_8.sec07;
+
+public class PromotionExample {
+
+	public static void main(String[] args) {
+		int hour = 24;
+		int min = 60;
+		
+		int totalMin = hour * min;
+		System.out.println("하루 총 분: " + totalMin+"분");
+		String str = "하루 총 분: 1440분";
+		
+		
+		
+		String str2 = "하루 총 분: " + totalMin+"분";
+		System.out.println(str.equals(str2));
+		
+		
+		System.out.println(str ==str2);
+		
+		System.out.println(System.identityHashCode(str2));
+		System.out.println(System.identityHashCode(str));
+		
+		//byte -> int
+		byte bVal =100;
+		int iVal1 = bVal;
+		
+		System.out.println(iVal1);
+		
+		//int -> long
+		int iVal2 = 1312313;
+		long lVal = iVal2;
+		
+		System.out.println(lVal);
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package practice5_3.sec06;
+
+public class StackMethodExample {
+	
+	String writer(String name , String title) {
+		return name +": "+ title;
+	}
+
+}

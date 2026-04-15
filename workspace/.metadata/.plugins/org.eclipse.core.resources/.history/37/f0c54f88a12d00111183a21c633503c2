@@ -1,0 +1,21 @@
+package practice6_09.sec08.exam03;
+
+public class CellphoneExample {
+
+	public static void main(String[] args) {
+		Cellphone cellphone = new Cellphone();
+		
+		//배터리 지정
+		cellphone.setBt(20);
+		//배터리가있는지 체크후 참거짓 반환후 btLow메서드 실행
+		if(cellphone.power()) {
+			System.out.println("켬");
+			cellphone.btLow();
+		} else {
+			System.out.println("꺼짐");
+		}
+		
+
+	}
+
+}

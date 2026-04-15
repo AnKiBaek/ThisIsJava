@@ -1,0 +1,23 @@
+package practice11_03.sec02.exam01;
+
+public class ExceptionHandlingExanple {
+
+	public static void printLegnth(String data) {
+
+		try {
+			int result = data.length();
+			System.out.println(result);
+		} catch (NullPointerException e) {
+			System.out.println(e.getMessage());
+		} finally {
+			System.out.println("마무리 동작");
+		}
+	}
+
+	public static void main(String[] args) {
+
+		printLegnth("Tdasdsadadasdasdasds");
+		printLegnth(null);
+
+	}
+}

@@ -1,0 +1,19 @@
+package ch09.sec03.exam01;
+
+public class Other {
+	
+	public static void main(String[] args) {
+		
+		Outer outer = new Outer();
+		
+		int result = outer.intMethod();
+		
+		System.out.println(result);
+		
+		
+		
+		System.out.println();
+	}	
+
+	}
+

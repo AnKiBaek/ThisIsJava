@@ -1,0 +1,29 @@
+package practice9_02.sec06;
+
+public class ButtonExample {
+
+	public static void main(String[] args) {
+		
+		// 왜 Ok , Cancel 객체를 두갤 만들었을까?
+		Button btnOk = new Button();
+		Button btnCancel = new Button();
+		
+		class OkListener implements Button.ClickListener {
+			@Override
+			public void onClick() {
+				System.out.println("OK버튼을 눌렀습니다.");
+			}
+		}
+		
+		class CancelListener implements Button.ClickListener {
+			@Override
+			public void onClick() {
+			System.out.println("Cancel버튼을 눌렀습니다.");	
+			}
+		}
+		
+		
+		
+		
+	}
+}

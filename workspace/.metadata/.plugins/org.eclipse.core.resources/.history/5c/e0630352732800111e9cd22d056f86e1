@@ -1,0 +1,19 @@
+package practice5_5.sec05;
+
+public class ReturnEx {
+
+	private String 문자열(String x) {
+		
+		String result = x + "입니다.";
+		return result;
+	}
+	
+	public static void main(String[] args) {
+		
+		ReturnEx  ex = new ReturnEx();
+		
+		String str = ex.문자열("이건 문자열메서드");
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package practice6_06.sec08.exam03;
+
+public class Car {
+	
+	int oil;
+	
+	void setOil(int oil) {
+		this.oil = oil;
+	}
+	
+	boolean isLeftOil() {
+		if(oil == 0) {
+			System.out.println("오일이 없습니다.");
+			return false;
+		}
+		System.out.println("오일이 있습니다.");
+		return true;
+	}
+	
+	void run() {
+		while(true) {
+			if(oil>0) {
+				System.out.println("달립니다. 남은오일: "+ oil);
+				oil--;
+			} else {
+				System.out.println("멈춥니다. 남은오일: " + oil);
+				return;
+			}
+		}
+	}
+
+}

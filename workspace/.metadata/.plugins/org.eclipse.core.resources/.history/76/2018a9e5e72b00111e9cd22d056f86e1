@@ -1,0 +1,5 @@
+package practice5_10.sec12;
+
+public enum Week {
+
+}

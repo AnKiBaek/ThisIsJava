@@ -1,0 +1,45 @@
+package ch02_2.sec07;
+
+public class PromotionExample {
+
+	public static void main(String[] args) {
+		int hour = 3;
+		int min  = 13;
+		
+		System.out.println(hour + "시간" + min + "분");
+		
+		int totalMin = hour *60 + 13 ;
+		
+		System.out.println("totalMin: "+ totalMin +"분");
+		
+		//byte -> int 자동형변환
+		byte bVal = 10;
+		int iVal = bVal;
+		
+		System.out.println("iVal: "+ iVal);
+		
+		//char -> int 자동형변환
+		char cVal = '가';
+		int iVal1 = cVal;
+		System.out.println("가 의 유니코드:" + iVal1);
+		
+		//short -> int 자동형변환
+		short sVal = 100;
+		int iVal2 = sVal;
+		System.out.println("sVal: "+ iVal2);
+		
+		//int -> long 자동형변환
+		int iVal3 = 10000;
+		long lVal = iVal3;
+		
+		System.out.println("iVal3: " + lVal);
+		
+		//long -> float 자동형변환
+		float fVal = lVal;
+		System.out.println(fval);
+		
+		
+
+	}
+
+}

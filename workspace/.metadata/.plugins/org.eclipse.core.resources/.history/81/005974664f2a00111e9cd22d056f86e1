@@ -1,0 +1,21 @@
+package practice5_10.sec10;
+
+public class AdvancedForExample {
+
+	public static void main(String[] args) {
+		//scores 생성
+		int[] scores = {90,23,48,58,49};
+		
+		//합계구하기
+		int sum = 0;
+		//인덱스가 필요없을때 사용
+		for(int i : scores) {
+			sum += i;
+		}
+		
+		//합계
+		System.out.println("합계: " + sum);
+
+	}
+
+}

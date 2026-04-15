@@ -1,0 +1,18 @@
+package practice6_09.sec06.exam01;
+
+public class CalculatorExample {
+
+	public static void main(String[] args) {
+		Calculator cal = new Calculator();
+		
+		cal.powerOn();
+		int result = cal.plus(10, 10);
+        double result2= cal.divide(20, 200);
+        
+        System.out.println(result);
+        System.out.println(result2);
+		cal.powerOff();
+
+	}
+
+}

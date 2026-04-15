@@ -1,0 +1,22 @@
+package ch01_8.sec09;
+
+public class Study {
+
+	public static void main(String[] args) {
+	String str1 = "리터럴";
+	String str2 = "리터럴";
+	String str3 = new String("객체화");
+	String str4 = new String("객체화");
+	
+	//출력
+	System.out.println(str1);
+	System.out.println(str2);
+	System.out.println(str3);
+	System.out.println(str4);
+	
+	
+	
+
+	}
+
+}

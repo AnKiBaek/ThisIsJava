@@ -1,0 +1,24 @@
+package ch01_2.sec09;
+
+public class Study {
+
+	public static void main(String[] args) {
+		
+		String str1 = "기라티나";
+		String str2 = "기라티나";
+		
+		String str3 = new String("기라티나");
+		String str4 = new String("기라티나");
+		
+		//출력
+		System.out.println(str1);
+		System.out.println(str2);
+		System.out.println(str3);
+		System.out.println(str4);
+		
+		//비교
+		
+		
+		
+	}
+}

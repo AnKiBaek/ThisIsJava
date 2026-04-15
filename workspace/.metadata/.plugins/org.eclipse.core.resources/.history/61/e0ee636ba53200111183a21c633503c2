@@ -1,0 +1,20 @@
+package practice8_02.sec06;
+
+public class RemoteControlExample {
+
+	public static void main(String[] args) {
+		RemoteControl audio = new Audio();
+		
+		if(audio instanceof Audio ad) {
+			ad.turnOn();
+			ad.setVolume(200);
+			ad.setMute(true);
+			System.out.println(ad.getVolume());
+			ad.setMute(false);
+			System.out.println(ad.getVolume());
+			
+			System.out.println(System.identityHashCode(ad));
+			System.out.println(System.identityHashCode(audio);
+		}
+	}
+}

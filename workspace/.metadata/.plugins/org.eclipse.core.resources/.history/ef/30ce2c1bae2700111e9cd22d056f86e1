@@ -1,0 +1,16 @@
+package ch01_4.sec12;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		float fVal1 = 3.14F;
+		float fVal2 = 3.14F;
+		float fVal3 = 3.14F;
+		
+		double result = fVal1 + fVal2 + fVal3;
+		
+		System.out.println(result);
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package practice7_05.sec04.exam02;
+
+public class SuperSonicAirPlaneExample {
+
+	public static void main(String[] args) {
+		SuperSonicPlane sa = new SuperSonicPlane();
+		sa.takeOff();
+		sa.fly();
+		sa.flyMode = SuperSonicPlane.SUPERSONIC;
+		sa.fly();
+		sa.flyMode = SuperSonicPlane.NOMAL;
+		sa.fly();
+		sa.land();
+
+	}
+
+}

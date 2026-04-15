@@ -1,0 +1,16 @@
+package ch02_3.sec07;
+
+public class PromotionExample {
+
+	public static void main(String[] args) {
+		int hour = 3;
+		int min = 23;
+		System.out.println(hour + "시간" + min + "분");
+		
+	
+		int totalmin = hour *60 + min ;
+		System.out.println(totalmin);
+	}
+	
+	
+}

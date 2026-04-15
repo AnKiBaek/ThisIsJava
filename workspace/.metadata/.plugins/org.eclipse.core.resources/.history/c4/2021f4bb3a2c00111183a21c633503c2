@@ -1,0 +1,16 @@
+package practice6_06.sec06.exam01;
+
+public class CalculatorExample {
+
+	public static void main(String[] args) {
+		
+		Calculator cal = new Calculator();
+		
+		cal.powerOn();
+		int result = cal.plus(10, 5);
+		double result2 = cal.divide(result, 2);
+		cal.powerOff();
+
+	}
+
+}

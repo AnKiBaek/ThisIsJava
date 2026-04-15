@@ -1,0 +1,22 @@
+package practice5_4.sec04;
+
+public class NullPointExceptionExample {
+
+	public static void main(String[] args) {
+		String[] str = new String[2];
+		
+		str[0] ="10";
+		str[1] ="20";
+		
+		for(int i =0 ; i <str.length; i++) {
+			int iVal = Integer.parseInt(str[i]);
+			
+			iVal += iVal;
+			System.out.println(iVal);
+			
+			
+		}
+
+	}
+
+}

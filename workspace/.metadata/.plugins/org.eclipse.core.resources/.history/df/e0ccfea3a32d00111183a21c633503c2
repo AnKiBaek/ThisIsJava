@@ -1,0 +1,44 @@
+package practice6_10.sec08.exam03;
+
+import java.util.Scanner;
+
+public class Cellphone {
+	
+	int bt;
+	String choice;
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	void setBt(int bt) {
+		this.bt = bt;
+	}
+	
+	boolean power() {
+		if(bt<=0) {
+			System.out.println("배터리 x"); return false;
+		}
+		System.out.println("배터리 o"); return true;
+	}
+	
+	void btLow() {
+		while(true) {
+			if(bt>0) {
+				System.out.println("실행.. 배터리: " +bt);
+				bt--;
+				if(bt == 10) {
+					System.out.println("배터리 "+bt+"% 남음");
+					System.out.println("충전 y / n");
+					choice = scanner.next();
+					switch(choice) {
+					case "y" : System.out.println("10% 충전"); 
+					bt += 10; break;
+					case "n" : System.out.println("충전안함"); continue;
+					System.out.println("test"); return;
+					}	
+				}
+			}
+		}
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package practice8_03.sec06;
+
+public class RemoteControlExample {
+public static void main(String[] args) {
+	Television tv = new Television();
+	tv.setVolume(100);
+}
+	
+	
+}

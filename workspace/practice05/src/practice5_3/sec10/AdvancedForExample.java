@@ -1,0 +1,31 @@
+package practice5_3.sec10;
+
+public class AdvancedForExample {
+	
+	
+	public static int sumScores(int[]arr) {
+		
+		int sum  = 0;
+		for(int i : arr) {	
+			sum+= i;
+		}
+		return sum;
+	}
+	
+	public static void avgScores(int[] arr, int sumVal) {
+		double avg = 0;
+		avg = (double)sumVal / arr.length;
+		System.out.println("평균: " + avg);
+	}
+	
+
+	public static void main(String[] args) {
+		
+		int[] scores = {10,10,100,20,30,40};
+		int x= sumScores(scores);
+		System.out.println(x);
+		avgScores(scores,  x);
+
+	}
+
+}

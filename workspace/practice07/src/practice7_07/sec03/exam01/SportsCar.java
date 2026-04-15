@@ -1,0 +1,19 @@
+package practice7_07.sec03.exam01;
+
+public class SportsCar extends Car{
+	
+	public void setMode(int i) {
+		switch(i) {
+		case 1 : System.out.println("스포츠모드"); break;
+		case 2 : System.out.println("일반모드"); break;
+		default : System.out.println("잘못입력했습니다");
+		}
+	}
+	
+     public SportsCar(String model , String color) {
+    	 super();
+    	 this.color = color;
+    	 this.model = model;
+     }
+
+}

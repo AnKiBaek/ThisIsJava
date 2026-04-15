@@ -1,0 +1,15 @@
+package practice9_03.sec.exam01;
+
+public class A {
+	
+	A(){
+		B b = new B();
+		b.methodB();
+	}
+
+	public class B {
+		public void methodB() {
+			System.out.println("B클래스 메서드");
+		}
+	}
+}

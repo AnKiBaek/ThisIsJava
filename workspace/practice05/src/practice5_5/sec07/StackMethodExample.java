@@ -1,0 +1,21 @@
+package practice5_5.sec07;
+
+public class StackMethodExample {
+
+	public static int staticMethod1(int x) {
+		int y = 2;
+		return  x*2;
+	}
+	public static int staticMethod2(int a) {
+		int b = 10;
+		System.out.println("staticMethod1호출!");
+		return  staticMethod1(a+b);
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println(staticMethod2(10));
+
+	}
+
+}

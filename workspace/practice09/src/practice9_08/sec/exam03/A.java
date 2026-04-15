@@ -1,0 +1,24 @@
+package practice9_08.sec.exam03;
+
+public class A {
+public void method1(int arg) {
+	int var =11;
+	int x = 10;
+	class B {
+		public void method2() {
+			System.out.println(arg);
+			System.out.println(var);
+		}
+	}
+	
+	x = var;
+	System.out.println(arg);
+	System.out.println(var);
+	System.out.println(x);
+	
+}
+public static void main(String[] args) {
+	A a = new A();
+	a.method1(20);
+}
+}

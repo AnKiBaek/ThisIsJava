@@ -1,0 +1,22 @@
+package practice6_03.sec06.exam01;
+
+public class CalculatorExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Calculator cal  = new Calculator();
+		cal.powerOn();
+		
+		System.out.println(cal.plus(10, 20));
+		
+		double result = cal.divide(100, 2);
+		
+		System.out.println(result);
+				
+				
+		
+		cal.powerOff();
+	}
+
+}

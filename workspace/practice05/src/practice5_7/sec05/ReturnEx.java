@@ -1,0 +1,22 @@
+package practice5_7.sec05;
+
+public class ReturnEx {
+	
+	private int doubae(int x ) {
+		int result  = x *2;
+		
+		return result;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ReturnEx ex = new ReturnEx();
+		
+		int result = ex.doubae(1002);
+		
+		System.out.println(result);
+
+	}
+
+}

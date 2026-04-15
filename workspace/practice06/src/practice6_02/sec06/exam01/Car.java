@@ -1,0 +1,29 @@
+package practice6_02.sec06.exam01;
+
+public class Car {
+
+	//필드선언
+	String model; 
+	boolean start;
+	int speed;
+	
+	Car(){
+		
+	}
+	
+	// 생성자 체이닝 방식이다.
+	// 매개변수를 3개받는 생성자가 없거나 3개를 받더라도 순서가 틀리면 
+	// 오류를 반환한다.
+	Car(boolean start,int speed){
+		this("람보",start,speed);
+		
+	}
+	
+	Car(String model , boolean start , int speed){
+		this.model = model;
+		this.speed = speed;
+		this.start = start;
+	}
+	
+}
+

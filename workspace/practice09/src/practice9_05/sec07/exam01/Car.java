@@ -1,0 +1,31 @@
+package practice9_05.sec07.exam01;
+
+public class Car {
+
+	private Tire tire1 = new Tire();
+	private Tire tire2 = new Tire() {
+		public void roll() {
+			System.out.println("익명객체방식1");
+		};
+	};
+	
+	public void run1() {
+		tire1.roll();
+		tire2.roll();
+	}
+	
+	public void run2() {
+		Tire tire = new Tire() {
+			@Override
+			public void roll() {
+				// TODO Auto-generated method stub
+				System.out.println("익명객체방식2");
+			}
+		};
+		tire.roll();
+	}
+	
+	public void run3(Tire tire) {
+		tire.roll();
+	}
+}

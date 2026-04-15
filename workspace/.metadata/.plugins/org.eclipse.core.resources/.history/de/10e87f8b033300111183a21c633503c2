@@ -1,0 +1,29 @@
+package practice8_05.sec06;
+
+public class Television implements RemoteControl{
+
+	private int vol;
+	private int memoryVol;
+	
+	@Override
+	public void setMute(boolean mute) {
+	if(mute) {
+		this.memoryVol = this.vol;
+		this.vol = MIN_VOLUME;
+		
+	}
+		
+	}@Override
+	public void setVol(int vol) {
+		// TODO Auto-generated method stub
+		
+	}@Override
+	public void turnOff() {
+		// TODO Auto-generated method stub
+		
+	}@Override
+	public void turnOn() {
+		// TODO Auto-generated method stub
+		
+	}
+}

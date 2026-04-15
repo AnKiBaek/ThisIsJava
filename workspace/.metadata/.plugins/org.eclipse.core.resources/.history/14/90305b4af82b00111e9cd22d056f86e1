@@ -1,0 +1,5 @@
+package practice5_5.sec10;
+
+public enum Month {
+
+}

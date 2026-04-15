@@ -1,0 +1,30 @@
+package practice6_06.sec08.exam03;
+
+public class Cellphone {
+	int battery;
+	String choice;
+	
+	void setBattery(int battery) {
+		this.battery = battery;
+	}
+	
+	boolean checkBattery() {
+		if(battery == 0) {
+			System.out.println("배터리가없습니다. 배터리 잔랑: " + battery); return false;
+		}
+		System.out.println("배터리가있습니다."); return true;
+	}
+	
+	void batteryLow() {
+		while(true) {
+			if(battery>0) {
+				System.out.println("실행중... 배터리 잔량: " +battery);
+				battery--;
+				if(battery == 0) {
+					System.out.println("배터리가없습니다.배터리 잔랑: " + battery); return;
+				}
+			}
+		}
+	}
+
+}

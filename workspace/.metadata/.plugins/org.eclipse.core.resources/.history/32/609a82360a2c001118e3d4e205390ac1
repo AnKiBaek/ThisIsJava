@@ -1,0 +1,12 @@
+package practice5_9;
+
+public enum Week {
+	SUNDAY,
+	MONDAY,
+	TUSEDAY,
+	WENEDAY,
+	THURSDAY,
+	FRIDAY,
+	SATERDAY
+
+}

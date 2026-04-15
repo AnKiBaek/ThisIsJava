@@ -1,0 +1,17 @@
+package practice6_01.sec08.exam02;
+
+public class Computer {
+	
+	//가변길이 매개변수를 갖는 메서드
+	int sum(int...values) {
+		
+		//배열식으로 사용하는법
+		//int sum (int[] values) {
+		int sum = 0;
+		for(int i = 0; i<values.length;i++) {
+			sum+=values[i];
+		}
+		return sum;
+	}
+
+}

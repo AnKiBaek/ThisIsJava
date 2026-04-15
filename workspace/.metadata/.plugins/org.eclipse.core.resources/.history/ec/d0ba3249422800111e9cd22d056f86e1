@@ -1,0 +1,15 @@
+package practice5_2.sec04;
+
+public class NullPointExceptionExample {
+
+	public static void main(String[] args) {
+		String[] strArr =new String[2];
+		
+		strArr[0]  ="dsdsaas";
+		
+		for(String strVal : strArr) {
+			System.out.println(strVal);
+		}
+	}
+
+}

@@ -1,0 +1,12 @@
+package practice7_08.sec03.exam01;
+
+public class SmartPhone extends Phone{
+	
+	public SmartPhone (String model , String color) {
+		super();
+		this.color = color;
+		this.model = model;
+		System.out.println("SmartPhone 생성자 실행");
+	}
+
+}

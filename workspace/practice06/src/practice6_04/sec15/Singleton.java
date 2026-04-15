@@ -1,0 +1,15 @@
+package practice6_04.sec15;
+
+public class Singleton {
+	//객체화를해서 다른클래스에 반환시킨다
+	private static Singleton singleton = new Singleton();
+	//다른곳에서 객체화하지못하게 막는장치가 필요하다.
+	private Singleton() {}
+	//객체를 대입받을녀셕이 필요하다
+	public  static Singleton getInstance() {
+		return singleton;
+	}
+	
+	
+
+}

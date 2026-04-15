@@ -1,0 +1,47 @@
+package practice8_04.sec06;
+
+public class Audio implements RemoteControl {
+
+	private int volume;
+	private int memoryVolume;
+	
+	public int getVolume() {
+		return this.volume;
+	}
+	
+	@Override
+	public void setMute(boolean mute) {
+		if(mute) {
+			this.memoryVolume = this.volume;
+			this.volume = MIN_VOLUME;
+			System.out.println("Audio 음소거");
+		} else {
+			this.volume = this.memoryVolume;
+			System.out.println("Audio 음소거 해제");
+		}
+		
+	}
+	@Override
+	public void setVolume(int volume) {
+		if(volume > MAX_VOLUME) {
+			this.volume = MAX_VOLUME;
+		} else if (volume < MIN_VOLUME) {
+			this.volume = MIN_VOLUME;
+		} else {
+			this.volume =volume;
+		}
+		System.out.println("Audio볼륨: " + this.volume);
+	}
+	@Override
+	public void turnOff() {
+		
+		System.out.println("Audio를 끕니다.");
+		
+	}
+	@Override
+	public void turnOn() {
+		
+		System.out.println("Audio를 켭니다.");
+		
+	}
+}

@@ -1,0 +1,35 @@
+package ch01_3.sec09;
+
+public class Study {
+
+	public static void main(String[] args) {
+		
+		String str1 = "이름";
+		String str2 = "이름";
+		String str3 = new String("이름");
+		String str4 = new String("이름");
+		
+		System.out.println(str1);
+		System.out.println(str2);
+		System.out.println(str3);
+		System.out.println(str4);
+		
+		//비교
+		System.out.println(str1 == str2);
+		System.out.println(str3 == str4);
+		
+		
+		//값비교
+		System.out.println(str3.equals(str4));
+		
+		//객체주소 기반해시코드 출력
+		System.out.println(System.identityHashCode(str4));
+		System.out.println(System.identityHashCode(str3));
+		System.out.println(System.identityHashCode(str2));
+		System.out.println(System.identityHashCode(str1));
+		
+		
+
+	}
+
+}

@@ -1,0 +1,37 @@
+package practice9_07.sec06;
+
+public class RemoteControlExample {
+
+	public static void main(String[] args) {
+		RemoteControl tvRemocon = new RemoteControl();
+		RemoteControl audioRemocon = new RemoteControl();
+		
+		class Tv implements RemoteControl.ButtonListener {
+			@Override
+			public void powerOff() {
+			    System.out.println("Tv를 끕니다.");
+			}
+			public void powerOn() {
+				System.out.println("Tv를 켭니다.");
+			}
+		}
+		
+		class Audio implements RemoteControl.ButtonListener {
+			@Override
+			public void powerOff() {
+			    System.out.println("Audio를 끕니다.");
+			}
+			public void powerOn() {
+				System.out.println("Audio를 켭니다.");
+			}
+		}
+		
+		tvRemocon.setButtonListener(new Tv());
+		audioRemocon.setButtonListener(new Audio());
+		
+		tvRemocon.powerOn();
+		audioRemocon.powerOn();
+		tvRemocon.powerOff();
+		audioRemocon.powerOff();
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;ch13.sec02.exam02.HomeAgent.java&apos; to &apos;HomeAgency.java&apos;&#x0D;&#x0A;- Original project: &apos;thisisjava&apos;&#x0D;&#x0A;- Original element: &apos;ch13.sec02.exam02.HomeAgent.java&apos;&#x0D;&#x0A;- Renamed element: &apos;ch13.sec02.exam02.HomeAgency.java&apos;" description="Rename compilation unit &apos;HomeAgent.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;ch13.sec02.exam02{HomeAgent.java" name="HomeAgency.java" references="false" stamp="1772542228962" version="1.0"/>
+</session>

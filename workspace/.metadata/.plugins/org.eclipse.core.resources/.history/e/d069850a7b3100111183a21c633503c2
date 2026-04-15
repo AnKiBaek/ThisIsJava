@@ -1,0 +1,15 @@
+package practice7_07.sec04.exam02;
+
+public class Car {
+	
+	public int speed;
+	
+	public void speedUp() {
+		speed +=1;
+	}
+	
+	public void stop() {
+		speed = 0;
+	}
+
+}

@@ -1,0 +1,22 @@
+package practice5_6.sec10;
+
+public class Ex {
+
+	public static void main(String[] args) {
+		
+		int x = 0;
+		int[] arr  = new int[x-1];
+		
+		for(int a : arr) {
+			a++;
+			arr[a] = a;
+		}
+		
+	
+		for(int i : arr) {
+			System.out.println(i);
+		}
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package ch02_5.sec07;
+
+public class PromotionExample {
+
+	public static void main(String[] args) {
+		int hour = 3;
+		int min = 10;
+		
+		int totalmin = hour *60 + min ;
+		
+		System.out.println(totalmin);
+		
+		//byte -> int
+		byte  bVal = 10;
+		int iVal =bVal;
+		
+		//char -> int
+		char cVal = '차';
+		int iVal2 = cVal;
+		
+		System.out.println(iVal2);
+
+	}
+
+}

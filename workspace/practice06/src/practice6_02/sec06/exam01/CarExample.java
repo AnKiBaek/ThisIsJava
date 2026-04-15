@@ -1,0 +1,33 @@
+package practice6_02.sec06.exam01;
+
+public class CarExample {
+
+	public static void main(String[] args) {
+		//car 객체생성
+		Car car = new Car();
+		Car car1 = new Car(true, 120);
+		Car car2 = new Car("R8",false,200);
+		
+		//객체필드 값 출력
+		System.out.println(car.model);
+		System.out.println(car.start);
+		System.out.println(car.speed);
+		
+		System.out.println();
+		
+		System.out.println(car1.model);
+		System.out.println(car1.start);
+		System.out.println(car1.speed);
+		
+		System.out.println();
+		
+		System.out.println(car2.model);
+		System.out.println(car2.start);
+		System.out.println(car2.speed);
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,34 @@
+package practice9_02.sec06;
+
+public class ButtonExample {
+
+	public static void main(String[] args) {
+
+		// 왜 Ok , Cancel 객체를 두갤 만들었을까?
+		Button btnOk = new Button();
+		Button btnCancel = new Button();
+
+		// 왜 클래스를 여기서만들었으며 , 왜 굳이 두개를 만들었을까
+		class OkListener implements Button.ClickListener {
+			@Override
+			public void onClick() {
+				System.out.println("OK버튼을 눌렀습니다.");
+			}
+		}
+
+		class CancelListener implements Button.ClickListener {
+			@Override
+			public void onClick() {
+				System.out.println("Cancel버튼을 눌렀습니다. ");
+			}
+		}
+		
+		//왜 외부클래스객체의 메서드에 인터페이스타입 객체를 파라미터로 넣었을까
+		btnOk.setClickListener(new OkListener());
+		btnCancel.setClickListener(new CancelListener());
+		
+		btnOk.click();
+		btnCancel.click();
+
+	}
+}

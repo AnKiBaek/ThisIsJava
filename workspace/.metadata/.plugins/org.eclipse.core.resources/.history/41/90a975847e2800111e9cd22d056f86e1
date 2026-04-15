@@ -1,0 +1,14 @@
+package practice5_3.sec06;
+
+public class ArrayCreateByExample {
+
+	public static void main(String[] args) {
+		int[] arr1 = new int[3];
+		
+		for(int a : arr1) {
+			System.out.println(a);
+		}
+
+	}
+
+}

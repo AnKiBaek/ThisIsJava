@@ -1,0 +1,16 @@
+package practice6_06.sec08.exam03;
+
+public class CellphoneExample {
+
+	public static void main(String[] args) {
+		Cellphone cellphone = new Cellphone();
+		cellphone.setBattery(100000);
+		
+		if(cellphone.checkBattery()) {
+			System.out.println("전원을 켰습니다.");
+			cellphone.batteryLow();
+		}
+
+	}
+
+}

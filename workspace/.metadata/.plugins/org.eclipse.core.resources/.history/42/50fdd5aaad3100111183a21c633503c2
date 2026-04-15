@@ -1,0 +1,9 @@
+package practice7_01.sec09;
+class A {
+	public void sound() {
+		System.out.println("A클래스");
+	}
+}
+public class InstanceofExample {
+
+}

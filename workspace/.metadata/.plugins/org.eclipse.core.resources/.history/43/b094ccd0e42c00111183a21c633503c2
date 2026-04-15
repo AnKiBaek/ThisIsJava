@@ -1,0 +1,15 @@
+package practice6_07.sec08.exam02;
+
+public class ComputerExample {
+
+	public static void main(String[] args) {
+		Computer computer  = new Computer();
+		int result1 = computer.minus(100,1000,10,20);
+		int result2 = computer.minus();
+		
+		System.out.println(result2);
+		
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package practice6_09.sec08.exam02;
+
+public class CarExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

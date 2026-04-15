@@ -1,0 +1,12 @@
+package practice6_01.sec03;
+
+//공개클래스에는 퍼블릭을 붙인다.
+//public 을 붙히면 다른 패키지에서도 사용가능하다.
+public class SportsCar {
+
+}
+
+//안붙히면 default 로 지정되므로 외부 패키지에서 사용할수없다.
+class Tir{
+	
+}

@@ -1,0 +1,44 @@
+package practice5_2.sec10;
+
+public class AdvancedForExample {
+	
+	
+	int sum;
+	
+	double avg;
+	
+	int sum(int[]arr) {
+		
+		for(int i : arr) {
+			sum += i;
+		}
+		return sum;
+	}
+	
+	double avg (int i ,int[] arr) {
+		
+		avg = (double)i /arr.length; 
+		
+		return avg;
+	}
+
+	public static void main(String[] args) {
+		
+		
+		int[] scores = {100,100,20,40,50};
+		
+		AdvancedForExample ex = new AdvancedForExample();
+		
+		int sum = ex.sum(scores);
+		double avg = ex.avg(sum, scores);
+		
+		System.out.println("합계: " + sum);
+		System.out.println("평균: " + avg);
+		
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package practice8_10.sec03;
+
+import practice8_05.sec03.Re;
+
+public class RemoteControlExample {
+
+
+	public static void main(String[] args) {
+		System.out.println(RemoteControl.MAX_VOLUME);
+		int minVol = Re.MAX;
+		
+		System.out.println(minVol);
+	}
+}

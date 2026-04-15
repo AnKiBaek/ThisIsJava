@@ -1,0 +1,75 @@
+package practice5_1.sec06;
+
+public class ArrayCreateByNewExample {
+
+	public static void main(String[] args) {
+		//배열변수 선언과 배열 생성
+		int[] arr1 = new int[3];
+		//배열항목의 초기값 출력
+		for(int i = 0; i < arr1.length ; i++) {
+			System.out.println(arr1[i]);
+		}
+		
+		System.out.println();
+		
+		//인덱스 순서별로값 변경
+		arr1[0] = 1;
+		arr1[1] = 2;
+		arr1[2] = 3;
+		
+		for(int i = 0; i < arr1.length ; i++) {
+			System.out.println(arr1[i]);
+		}
+		
+		System.out.println();
+		
+		//double 배열 생성
+		double[] doubleArr = new double[3];
+		
+		//doubleArr 초기값 출력
+		for(double a : doubleArr) {
+			System.out.println(a);
+		}
+		
+		System.out.println();
+		
+		//값 넣기
+		doubleArr[0] = 1.3;
+		doubleArr[1] = 2.3;
+		doubleArr[2] = 3.3;
+		
+		//doubleArr 값 출력
+	    for(double a : doubleArr) {
+		    System.out.println(a);
+		}
+	    
+	    //String 배열 생성
+	    String[] strArr = new String[3];
+	    
+	    //초기값 출력
+	    for(String strVal : strArr) {
+	    	System.out.println(strVal);
+	    }
+	    
+	    System.out.println();
+	    
+	    //값등록
+	    strArr[0] =  "우";
+	    strArr[1] =  "테";
+	    strArr[2] =  "코";
+	    
+	    //값 출력
+	    for(String strVal : strArr) {
+	    	System.out.printf(strVal);
+	    }
+	    
+	    
+	    
+	    
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package practice8_01.sec06;
+
+public class RemoteControlExample {
+	public static void main(String[] args) {
+		RemoteControl tv = new Television();
+		tv.turnOn();
+		tv.setVolume(100);
+		tv.setVolume(9);
+		
+		
+		if(tv instanceof Television tv2) {
+			
+			tv2.getVolume();
+		}
+		
+		
+		tv.setMute(true);
+		
+		tv.turnOff();
+	}
+
+}

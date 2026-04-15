@@ -1,0 +1,10 @@
+package ch01_4.sec09;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		System.out.println("No Java");
+
+	}
+
+}

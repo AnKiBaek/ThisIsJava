@@ -1,0 +1,17 @@
+package practice9_02.sec06;
+
+public class Button {
+	private ClickListener clickListener;
+	
+	public void setClickListener(ClickListener clickListener) {
+		this.clickListener = clickListener;
+	}
+	public void click() {
+		clickListener.onClick();
+	}
+public static interface ClickListener{
+	//아무래도 버튼이 활성화 되었을때 내보내는 값에 차이를 주는 방법인듯하다.
+	//해답: 확장성에 관여를한다. ex) 뭔가를 먹을뿐 뭘먹는지는 알필요가없다.
+	public void onClick();
+}
+}

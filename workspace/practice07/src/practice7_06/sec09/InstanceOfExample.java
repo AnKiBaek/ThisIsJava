@@ -1,0 +1,41 @@
+package practice7_06.sec09;
+class Person{
+	public void brath() {
+		System.out.println("사람이 숨을 쉽니다.");
+	}
+}
+
+class Child extends Person{
+	@Override
+	public void brath() {
+		// TODO Auto-generated method stub
+	System.out.println("어린이가 숨을쉽니다.");
+	}
+}
+
+class Sinear extends Person {
+	@Override
+	public void brath() {
+		// TODO Auto-generated method stub
+	System.out.println("어른이 숨을 쉽니다.");
+	}
+	public void pay() {
+		System.out.println("어른이 결재합니다.");
+	}
+}
+public class InstanceOfExample {
+	
+	public static void main(String[] args) {
+		Person p1 = new Child();
+		
+		p1.brath();
+		
+		Person p2 = new Sinear();
+		p2.brath();
+		
+		if(p2 instanceof Sinear s1) {
+			s1.pay();
+		}
+	}
+
+}

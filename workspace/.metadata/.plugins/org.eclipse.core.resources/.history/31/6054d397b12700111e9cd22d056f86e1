@@ -1,0 +1,6 @@
+package ch01_9.sec11;
+
+public class Snippet {
+	short sVal2 = 32767;
+}
+

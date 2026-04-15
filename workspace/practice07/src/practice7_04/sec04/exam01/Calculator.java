@@ -1,0 +1,10 @@
+package practice7_04.sec04.exam01;
+
+public class Calculator {
+	
+	public double areaCircle(double r) {
+		
+		return 3.14 *r*r;
+	}
+
+}

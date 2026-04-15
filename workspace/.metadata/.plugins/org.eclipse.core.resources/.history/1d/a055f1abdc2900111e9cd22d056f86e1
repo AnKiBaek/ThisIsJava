@@ -1,0 +1,21 @@
+package practice5_9.sec07;
+
+public class Ex {
+	private double winnerLife(double traningTime) {
+		return traningTime * 60;
+	}
+	private double workLevel(double tired) {
+		double lucky =0.001;
+		tired += lucky;
+		return winnerLife(tired);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Ex ex =new Ex();
+		System.out.println(ex.workLevel(100));
+
+	}
+
+}

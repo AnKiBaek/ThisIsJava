@@ -1,0 +1,9 @@
+package practice7_08.sec04.exam01;
+
+public class Calculator {
+	
+	public double circleMethod(double  r) {
+		return 3.14 *r*r;
+	}
+
+}

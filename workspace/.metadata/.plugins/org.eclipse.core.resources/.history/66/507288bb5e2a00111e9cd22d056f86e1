@@ -1,0 +1,30 @@
+package practice5_8;
+
+public class AdvancedForExample {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {10,20,30,40};
+		int sum = 0;
+		int idex = 0;
+		for(int a : arr) {
+			System.out.println(idex + ": "+a);
+			idex++;
+			sum += a;
+		}
+		System.out.println("합계: "+sum);
+		
+		String[] strArr = {"10","20","30","50"};
+		int strToInt = 0;
+		int idex2 = 0;
+		for(String s: strArr) {
+			Integer.parseInt(s);
+			
+			strToInt += Integer.parseInt(s);
+		}
+		
+		System.out.println("합계: "+strToInt);
+
+	}
+
+}

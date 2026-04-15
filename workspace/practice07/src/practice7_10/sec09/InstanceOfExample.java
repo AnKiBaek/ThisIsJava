@@ -1,0 +1,33 @@
+package practice7_10.sec09;
+class A {
+	public void sound() {
+		System.out.println("A클래스");
+	}
+}
+
+class B extends A {
+	 @Override
+	public void sound() {
+		// TODO Auto-generated method stub
+	System.out.println("B클래스");
+	}
+	 
+	 public void read() {
+		 System.out.println("멍멍");
+	 }
+}
+public class InstanceOfExample {
+	
+	public static void main(String[] args) {
+		A a = new A();
+		a.sound();
+		
+		A a1 = new B();
+		a1.sound();
+		
+		if(a1 instanceof B b) {
+			b.read();
+		}
+	}
+
+}

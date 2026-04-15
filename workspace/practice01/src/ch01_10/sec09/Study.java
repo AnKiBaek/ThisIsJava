@@ -1,0 +1,33 @@
+package ch01_10.sec09;
+
+public class Study {
+
+	public static void main(String[] args) {
+		String str1 = "신용권";
+		String str2 = "신용권";
+		String str3 = new String("신용권");
+		String str4 = new String("신용권");
+
+		//출력
+		System.out.println(str1);
+		System.out.println(str2);
+		System.out.println(str3);
+		System.out.println(str4);
+		
+		
+		// == 연산자 비교 ( 객체주소 )
+		System.out.println(str1 == str2);
+		System.out.println(str4 == str3);
+		
+		// 스트링은 이퀄스비교다 기백아..
+		System.out.println(str3.equals(str4));
+		
+		//해시코드 (객체주소기반)
+		System.out.println(System.identityHashCode(str4));
+		System.out.println(System.identityHashCode(str3));
+		System.out.println(System.identityHashCode(str2));
+		System.out.println(System.identityHashCode(str1));
+		
+	}
+
+}

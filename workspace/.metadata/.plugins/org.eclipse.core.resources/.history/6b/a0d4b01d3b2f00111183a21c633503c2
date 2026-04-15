@@ -1,0 +1,14 @@
+package practice7_02.sec04.exam01;
+
+public class ComputerExample {
+
+	public static void main(String[] args) {
+	 Calculator calculator = new Calculator();
+	 
+	 int r = 100;
+	 
+	 System.out.println(calculator.areaCircle(r));
+
+	}
+
+}

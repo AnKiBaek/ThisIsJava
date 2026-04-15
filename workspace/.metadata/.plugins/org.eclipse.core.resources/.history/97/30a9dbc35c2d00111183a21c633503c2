@@ -1,0 +1,22 @@
+package practice6_04.sec08.exam03;
+
+public class Cellphone {
+	
+	int battery;
+	String choice;
+	
+	void setBattery(int battery) {
+		this.battery = battery;
+	}
+	
+	boolean isLeftBattery() {
+		if(battery == 0) {
+			System.out.println("배터리가없습니다");
+			return false;
+		}	
+		System.out.println("배터리가있습니다.");
+	}
+	
+	
+
+}

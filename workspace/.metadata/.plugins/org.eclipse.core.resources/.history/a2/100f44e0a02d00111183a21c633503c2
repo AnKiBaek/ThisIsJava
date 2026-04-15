@@ -1,0 +1,43 @@
+package practice6_09.sec08.exam03;
+
+public class Cellphone {
+
+	int bt;
+	
+	//Setter
+	void setBt(int bt) {
+		this.bt = bt;
+	}
+	
+	//배터리가있으면 켜짐 없으면 안켜짐
+	boolean power() {
+		// 배터리가 0 보다 작거나 같을경우 false 리턴
+		if(bt <= 0) {
+			System.out.println("배터리 x"); return false;
+		}
+		// 기본적으로 배터리가 0보다 클경우 true 리턴
+		System.out.println("배터리 o"); return true;
+	}
+	
+	//배터리 줄어드는 메서드
+	void btLow() {
+		//무한루프 : break , return , continue 사용가능
+		while(true) {
+			// 배터리가 0보다 크면 배터리 1씩 감소
+			if(bt>0) {
+				System.out.println("실행중.."+ bt);
+				bt--;
+			
+			// 그게아니면 기본적으로 전원이꺼지고 return을 만나서 메서드 무한루프 탈출
+			} else {
+				System.out.println("꺼짐" + bt); return;
+			}
+			
+		}
+		
+	}
+	
+	
+	
+
+}

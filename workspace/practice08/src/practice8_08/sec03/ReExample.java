@@ -1,0 +1,9 @@
+package practice8_08.sec03;
+
+public class ReExample {
+	public static void main(String[] args) {
+		System.out.println(Re.MAX);
+		System.out.println(Re.MIN);
+	}
+
+}

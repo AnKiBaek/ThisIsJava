@@ -1,0 +1,39 @@
+package practice8_05.sec06;
+
+public class Television implements RemoteControl{
+
+	private int vol;
+	private int memoryVol;
+	
+	@Override
+	public void setMute(boolean mute) {
+	if(mute) {
+		this.memoryVol = this.vol;
+		this.vol = MIN_VOLUME;
+		System.out.println("음소거.");
+	} else {
+		this.vol = this.memoryVol;
+		System.out.println("음소거 해제.");
+	}
+		
+	}@Override
+	public void setVol(int vol) {
+		if(vol > MAX_VOLUME) {
+			this.vol = MAX_VOLUME;
+		} else if(vol < MIN_VOLUME) {
+			this.vol = MIN_VOLUME;
+		} else {
+			this.vol = vol;
+		}
+		System.out.println("볼륨: " + this.vol);
+		
+	}@Override
+	public void turnOff() {
+		System.out.println("꺼짐.");
+		
+	}@Override
+	public void turnOn() {
+		// TODO Auto-generated method stub
+		
+	}
+}

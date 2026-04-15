@@ -1,0 +1,22 @@
+package practice5_2.sec07;
+
+public class StackMethodExample {
+
+	int foo(int a) {
+		int b = 10;
+		return a*b;
+	}
+	
+	int var (int x) {
+		int y = 12;
+		return foo(x-y);
+	}
+	public static void main(String[] args) {
+		
+		StackMethodExample ex = new StackMethodExample();
+		
+		System.out.println(ex.foo(1));
+
+	}
+
+}

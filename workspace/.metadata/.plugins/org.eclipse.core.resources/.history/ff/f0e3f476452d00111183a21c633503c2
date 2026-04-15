@@ -1,0 +1,20 @@
+package practice6_02.sec08.exam03;
+
+
+
+public class CellphoneExample {
+
+	public static void main(String[] args) {
+		Cellphone cellphone = new Cellphone();
+		
+		cellphone.setBattery(20);
+		
+		if(cellphone.powerOn()) {
+			cellphone.batteryLow();
+		}
+		System.out.println("전원이 꺼집니다.");
+		
+
+	}
+
+}

@@ -1,0 +1,35 @@
+package practice6_05.sec08.exam03;
+
+public class Car {
+	
+	int gas;
+	
+	void setGas(int gas) {
+		this.gas = gas;
+	}
+	
+	// 참,거짓을 반환하는 메서드 생성
+	boolean isLeftGas() {
+		// gas 의 값이 0일경우 false 리턴한다 -n 일경우엔?
+		if(gas == 0){
+			System.out.println("가스가 없습니다.");
+			return false;
+		}
+		System.out.println("가스가있습니다.");
+		return true;
+	}
+	
+	//출발메서드
+	void run() {
+			while(true) {
+				if(gas>0) {
+				System.out.println("달립니다. 남은가스: "+ gas);
+				gas--;
+			} else {
+				System.out.println("가스가 없습니다. 남은가스: "+ gas);
+				return;
+			}
+		}
+	}
+
+}

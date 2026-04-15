@@ -1,0 +1,16 @@
+package practice5_10.sec05;
+
+public class ReturnExam {
+	
+	String void(String x) {
+		
+		System.out.println(System.identityHashCode(x));
+	
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

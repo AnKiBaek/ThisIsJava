@@ -1,0 +1,25 @@
+package practice5_4;
+
+public class MultidimensionalArrayByValueListExample {
+
+	public static void main(String[] args) {
+		String[][] strArr = {{"40","50"},{"20","30"}};
+		
+		int totalVal =0;
+		int totalCount =0;
+		double avg = 0;
+		for(int i =0; i<strArr.length; i++) {
+			totalCount += strArr[i].length;
+			for(int k = 0; k<strArr[i].length;k++) {
+				totalVal += Integer.parseInt(strArr[i][k]);
+			}
+			
+			
+		}
+		System.out.println(totalCount);
+		System.out.println(totalVal);
+		avg = totalVal / totalCount;
+		System.out.println(avg);
+	}
+
+}

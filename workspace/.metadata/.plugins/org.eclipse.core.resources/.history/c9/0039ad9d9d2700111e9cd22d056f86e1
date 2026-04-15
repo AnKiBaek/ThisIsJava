@@ -1,0 +1,27 @@
+package ch01_5.sec09;
+
+public class Study {
+
+	public static void main(String[] args) {
+		
+		String d1 = "음";
+		String d2 = "음";
+		String d3 = new String("음");
+		String d4 = new String("음");
+		
+		//출력
+		System.out.println(d1);
+		System.out.println(d2);
+		System.out.println(d3);
+		System.out.println(d4);
+		
+		//비교
+		System.out.println(d1 == d1);
+		System.out.println(d3 == d4);
+		
+		
+		
+
+	}
+
+}

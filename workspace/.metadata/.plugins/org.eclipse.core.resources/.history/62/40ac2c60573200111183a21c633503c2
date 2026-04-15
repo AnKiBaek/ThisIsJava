@@ -1,0 +1,9 @@
+package practice8_01.sec03;
+
+public interface RemoteControl {
+	
+	// public static final
+	int MAX_VALUME = 10;
+	int MIN_VALUME = 10;
+
+}

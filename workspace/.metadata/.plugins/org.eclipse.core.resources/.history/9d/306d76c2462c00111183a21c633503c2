@@ -1,0 +1,11 @@
+package practice6_05.sec06.exam01;
+
+public class MouseExample {
+
+	public static void main(String[] args) {
+		Mouse mouse = new Mouse();
+		Mouse mouse2 = new Mouse();
+
+	}
+
+}

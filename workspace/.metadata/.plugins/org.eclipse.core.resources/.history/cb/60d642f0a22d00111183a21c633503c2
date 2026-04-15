@@ -1,0 +1,10 @@
+package practice6_10.sec08.exam03;
+
+public class CellphoneExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

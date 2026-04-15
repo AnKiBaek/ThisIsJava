@@ -1,0 +1,19 @@
+package ch01_3.sec12;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		int i =0;
+		int d = 20;
+		int dlss = 230021;
+		
+		long result = i + d+ dlss;
+		
+		i =(int) result ;
+		
+		
+		System.out.println(result);
+
+	}
+
+}

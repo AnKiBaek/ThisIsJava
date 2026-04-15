@@ -1,0 +1,21 @@
+package practice6_05.sec06.exam01;
+
+public class BookInfoExample {
+
+	public static void main(String[] args) {
+		BookInfo bookInfo = new BookInfo();
+		
+		bookInfo.powerOn();
+		String authName = bookInfo.author("안기백");
+		String bookName = bookInfo.name("우테코에 들어가는법");
+		
+		String str = authName +" : "+ bookName;
+		
+		System.out.println(str);
+		
+		
+		bookInfo.powerOff();
+
+	}
+
+}

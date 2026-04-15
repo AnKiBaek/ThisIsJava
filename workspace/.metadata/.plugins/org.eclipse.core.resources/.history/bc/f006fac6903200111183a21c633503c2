@@ -1,0 +1,5 @@
+package practice8_06.sec04;
+
+public interface RemoteControl {
+
+}

@@ -1,0 +1,28 @@
+package practice5_6.sec06;
+
+public class ArrayMethodExample {
+
+
+	
+	private void passVal(int[] arr) {
+		
+		for(int i = 0; i < arr.length ; i++) {
+			
+			int result = arr[i];
+			System.out.println(result);
+		}
+		
+	
+
+	}
+	public static void main(String[] args) {
+		
+		ArrayMethodExample ex = new ArrayMethodExample();
+		ex.passVal(new int[] {1,2,3});
+		
+		
+		
+
+	}
+
+}

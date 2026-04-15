@@ -1,0 +1,19 @@
+package practice5_4.sec06;
+
+public class ArrayMethodExample {
+	
+	private void printstrArr(String[]strArr) {
+		for(String s: strArr) {
+			System.out.println(s);
+		}
+	}
+
+	public static void main(String[] args) {
+		
+		ArrayMethodExample ex = new ArrayMethodExample();
+		
+		ex.printstrArr(new String[] {"기백","기백","기백","기백","기백");
+
+	}
+
+}

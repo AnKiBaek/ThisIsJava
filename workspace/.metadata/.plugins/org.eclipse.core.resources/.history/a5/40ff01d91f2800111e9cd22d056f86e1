@@ -1,0 +1,24 @@
+package ch02_6.sec07;
+
+public class PromotionExample {
+
+	public static void main(String[] args) {
+		
+		int a = 100;
+		int vx = 2;
+		
+		int result = a * 100 + vx ;
+		
+		System.out.println(result);
+		
+		//byte -> short
+		
+		byte bVal = 127;
+		short sVal = bVal;
+		
+		System.out.println(sVal);
+				
+
+	}
+
+}

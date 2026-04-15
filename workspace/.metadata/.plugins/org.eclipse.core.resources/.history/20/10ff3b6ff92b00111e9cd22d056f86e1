@@ -1,0 +1,34 @@
+package practice5_5.sec12;
+
+import java.util.Calendar;
+
+public class MonthExample {
+
+	public static void main(String[] args) {
+		Month toMonth = null;
+		
+		Calendar now = Calendar.getInstance();
+		
+		int month = now.get(Calendar.MONTH);
+		
+		switch(month) {
+		case 1 : toMonth = Month.JANUARY; break;
+		case 2 : toMonth = Month.FEBRUARY; break;
+		case 3 : toMonth = Month.MARCH; break;
+		case 4 : toMonth = Month.APRIL; break;
+		case 5 : toMonth = Month.MAY; break;
+		case 6 : toMonth = Month.JUNE; break;
+		case 7 : toMonth = Month.JULY; break;
+		case 8 : toMonth = Month.AUGUST; break;
+		case 9 : toMonth = Month.OCTOBER; break;
+		case 10 : toMonth = Month.SEPTEMBER; break;
+		case 11 : toMonth = Month.NOVEMBER; break;
+		case 12 : toMonth = Month.DECEMBER; break;
+		
+		}
+		
+		System.out.println(month));
+
+	}
+
+}

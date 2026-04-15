@@ -1,0 +1,39 @@
+package ch01_6.sec09;
+
+public class Study {
+
+	public static void main(String[] args) {
+		
+		String d1 = "음";
+		String d2 = "음";
+		String d3 = new String("음");
+		String d4 = new String("음");
+		
+		//출력
+		System.out.println(d1);
+		System.out.println(d2);
+		System.out.println(d3);
+		System.out.println(d4);
+		
+		//비교 (객체 주소 비교임)
+		System.out.println(d1 == d1);
+		System.out.println(d3 == d4);
+		
+		//값 비교
+		System.out.println(d3.equals(d4));
+		
+		//해시코드 출력 (객체주소기반)
+		System.out.println(System.identityHashCode(d4));
+		System.out.println(System.identityHashCode(d3));
+		System.out.println();
+		System.out.println(System.identityHashCode(d2));
+		System.out.println(System.identityHashCode(d1));
+		
+		
+		
+		
+		
+
+	}
+
+}

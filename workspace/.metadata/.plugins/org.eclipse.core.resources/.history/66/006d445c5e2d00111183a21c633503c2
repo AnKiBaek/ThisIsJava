@@ -1,0 +1,56 @@
+package practice6_04.sec08.exam03;
+
+import java.util.Scanner;
+
+public class Cellphone {
+	
+	int battery;
+	String choice;
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	void setBattery(int battery) {
+		this.battery = battery;
+	}
+	
+	boolean isLeftBattery() {
+		if(battery == 0) {
+			System.out.println("배터리가없습니다");
+			return false;
+		}	
+		System.out.println("배터리가있습니다.");
+		System.out.println("전원 켭니까? y/n");
+		choice = scanner.nextLine();
+		switch(choice) {
+		case "y" : System.out.println("전원 켬"); return true;
+		case "n" : System.out.println("전원 안켬"); return false;
+		default  : System.out.println("잘못 된 값입력"); return false;
+		}
+	}
+	
+	void batteryLow() {
+		while(true) {
+		if(0<battery) {
+			
+				System.out.println("실행중.... 배터리 잔량 : " + battery);
+				battery --;
+				
+				if(10 == battery) {
+					System.out.println("배터리가 10% 남았음");
+					System.out.println("충전? y / n");
+					choice = scanner.nextLine();
+					switch(choice) {
+					case "y" : System.out.println("10 %충전하겠습니다"); battery += 10; break;
+					case "n" : System.out.println("충전안함"); break;
+					default  : System.out.println("잘못 된 값입력"); return;
+					}
+				}
+			}
+			
+		} 
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,24 @@
+package practice9_04.sec.exam03;
+
+public class A {
+
+	public void method1(int arg) {
+	int val = 1;
+	class B{
+		public void method2() {
+			System.out.println(val);
+			System.out.println(arg);
+		}
+	}
+	System.out.println("val: " + val);
+	System.out.println("arg: " + arg);
+	}
+	
+	//로컬클래스에서 외부클래스에 선언된 변수의 값을 사용하게되면 변경할수없게된다. final 특성을 가지게 됨
+	//즉 읽기전용이다.
+	
+	public static void main(String[] args) {
+		A a = new A();
+		a.method1(3);
+	}
+}

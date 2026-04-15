@@ -1,0 +1,33 @@
+package practice7_07.sec03.exam01;
+
+public class SportsCarExample {
+
+	public static void main(String[] args) {
+		Car sc = new SportsCar("r8", "red");
+		String scModel = sc.getModel();
+		String scColor = sc.getColor();
+		
+		System.out.println(scColor);
+		System.out.println(scModel);
+		
+		
+		Car sc2 = new SportsCar("r8","red");
+		
+		String scModel2 = sc2.getModel();
+		String scColor2 = sc2.getColor();
+		
+		System.out.println(scColor2);
+		System.out.println(scModel2);
+		
+		
+		System.out.println(scColor.equals(scColor2));
+		
+		
+		SportsCar sportsCar = new SportsCar(scModel2, scColor2);
+		
+		
+		sportsCar.setMode(3);
+
+	}
+
+}

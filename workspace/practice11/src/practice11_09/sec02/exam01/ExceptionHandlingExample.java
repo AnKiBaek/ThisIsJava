@@ -1,0 +1,24 @@
+package practice11_09.sec02.exam01;
+
+public class ExceptionHandlingExample {
+
+	public static void printLength(String data) {
+		try {
+			int result = data.length();
+			System.out.println(result);
+		}catch (NullPointerException e) {
+			// System.err : out과 따로동작한다.
+			//System.err.println(e.getMessage());
+			System.err.println(e.getMessage());
+		} finally {
+			System.out.println("마무리 동작");
+		}
+	}
+	
+	public static void main(String[] args) {
+		printLength("dasdasdasdasdasdasdasdasdasdasd");
+		printLength(null);
+
+	}
+
+}

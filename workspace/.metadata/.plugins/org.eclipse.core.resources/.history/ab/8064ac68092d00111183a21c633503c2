@@ -1,0 +1,34 @@
+package practice6_07.sec08.exam03;
+
+import java.util.Scanner;
+
+public class Phone {
+	int battery;
+	
+	void setBattery(int battery) {
+		this.battery = battery;
+	}
+	
+	boolean isLeftBattery() {
+		if(battery == 0) {
+			System.out.println("배터리가 없습니다.");
+			return false;
+		}
+		System.out.println("배터리가 있습니다.");
+		return true;
+	}
+	
+
+	void run() {
+		while(true) {
+			if(battery > 0) {
+				System.out.println("휴대폰을 사용합니다. 남은배터리: " + battery);
+			} else {
+				System.out.println("휴대폰이 꺼집니다. 남은배터리: "+ battery);
+			}
+		}
+	}
+	
+	
+
+}

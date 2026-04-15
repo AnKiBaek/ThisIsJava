@@ -1,0 +1,32 @@
+package practice5_4;
+
+import java.util.Calendar;
+
+public class WeekExample {
+
+	public static void main(String[] args) {
+		
+		//Week 타입 변수 선언 null 대입
+		Week today = null;
+		
+		// 컴퓨터 기준 시간정보를 담는 now 객체 만들기
+		Calendar now = Calendar.getInstance();
+		
+		//int 1(월) ~7(일)값으로 일주일 반환
+		int day = now.get(Calendar.DAY_OF_WEEK);
+		
+		switch(day) {
+		case 1 : today = Week.SUNDAY; break;
+		case 2 : today = Week.MONDAY; break;
+		case 3 : today = Week.TUSEDAY; break;
+		case 4 : today = Week.WENEDAY; break;
+		case 5 : today = Week.THURSDAY; break;
+		case 6 : today = Week.FRIDAY; break;
+		case 7 : today = Week.SATURDAY; break;
+		
+		}
+
+		System.out.println(today);
+	}
+
+}

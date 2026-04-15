@@ -1,0 +1,44 @@
+package ch02_4.sec07;
+
+public class PromotionExample {
+
+	public static void main(String[] args) {
+		int hour  = 3;
+		int min = 30;
+		System.out.println(hour + "시간" + min + "분");
+		
+		int totalmin = hour * 60 + min ;
+		
+		System.out.println(totalmin+ "분");
+		
+		//byte -> int 
+		byte bVal = 100;
+		
+		int iVal = bVal;
+		System.out.println(iVal);
+		
+		//char -> int
+		char cVal = '가';
+		
+		int iVal2 = cVal;
+		
+		System.out.println("가 의 유니코드: " + iVal2);
+		
+		//short -> int
+		short sVal =100;
+		
+		int iVal3 = sVal;
+		
+		System.out.println(iVal3);
+		
+		//int -> long
+		int iVal4 =1002323;
+		long lVal = iVal4;
+		
+		System.out.println(lVal);
+		
+		
+
+	}
+
+}

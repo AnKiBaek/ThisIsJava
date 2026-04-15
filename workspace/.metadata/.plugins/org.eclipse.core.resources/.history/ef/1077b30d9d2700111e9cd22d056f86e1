@@ -1,0 +1,37 @@
+package ch01_5.sec09;
+
+public class Study {
+
+	public static void main(String[] args) {
+		
+		String s1 = "변수";
+		String s2 = "변수";
+		String s3 = new String("변수임");
+		String s4 = new String("변수임");
+		
+		//출력
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+		System.out.println(s4);
+		
+		//비교
+		System.out.println(s1 == s2);
+		System.out.println(s3 == s4);
+		
+		//값 비교
+		System.out.println(s3.equals(s4));
+		
+		//해시코드 출력 ( 객체주소기반 )
+		System.out.println(System.identityHashCode(s4));
+		System.out.println(System.identityHashCode(s3));
+		System.out.println(System.identityHashCode(s2));
+		System.out.println(System.identityHashCode(s1));
+		
+		
+		
+		
+
+	}
+
+}

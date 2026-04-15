@@ -1,0 +1,9 @@
+package practice7_05.sec08.exam02;
+
+public class Animal {
+	
+	public void eat() {
+		System.out.println("동물이음식을 먹습니다");
+	}
+
+}

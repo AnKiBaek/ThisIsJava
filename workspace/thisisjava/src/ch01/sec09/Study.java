@@ -1,0 +1,50 @@
+package ch01.sec09;
+
+
+
+public class Study {
+	public static void main(String[] args) {
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		String str1 = "기백";
+//		String str2 = "기백";
+//		
+//		String str3 =  new String ("기백");
+//		String str4 =  new String ("기백");
+//
+//		System.out.println(str1);
+//		System.out.println(str2);
+//		System.out.println(str3);
+//		System.out.println(str4);
+//		
+//		System.out.println(str1 == str2);
+//		System.out.println(str3 == str4);
+//		System.out.println(str3.equals(str4));
+//		
+//		// 메모리 주소를 기반으로 한 고유 식별값(해시코드) 출력
+//		System.out.println(System.identityHashCode(str3)); 
+//		System.out.println(System.identityHashCode(str4));
+//		
+//		// 메모리 주소를 기반으로 한 고유 식별값(해시코드) 출력
+//		System.out.println(System.identityHashCode(str1)); 
+//		System.out.println(System.identityHashCode(str2));
+//		
+//		
+//		
+		
+	}
+
+}

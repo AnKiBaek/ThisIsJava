@@ -1,0 +1,31 @@
+package practice6_02.sec14;
+
+public class Car {
+	
+	// 필드선언
+	private int speed;
+	private boolean stop;
+	
+	
+	// Getter , Setter
+	public int getSpeed() {
+		return speed;
+	}
+	public void setSpeed(int speed) {
+		if(speed<0) {
+			speed = 0;
+		} 
+		this.speed = speed;
+			
+	}
+	public boolean isStop() {
+		return stop;
+	}
+	public void setStop(boolean stop) {
+		if(stop == true) {
+			speed = 0;
+		}
+		this.stop = stop;
+		
+	}
+}

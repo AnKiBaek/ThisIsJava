@@ -1,0 +1,22 @@
+package practice9_04.sec06;
+
+public class Button {
+	// ClickListener 상태값 필스
+	private ClickListener clickListener;
+	
+	// Button 객체에 ClickListener 객체 주입
+	public void setClickListener(ClickListener clickListener) {
+		this.clickListener = clickListener;
+	}
+	
+	// Button ->> ClickListener 트리거 작용
+	public void click() {
+		clickListener.onClick();
+	}
+	
+	// click() 실행시 다형성을통해 여러경우의 클릭상태 구현가능
+	public static interface ClickListener {
+		public void onClick();
+	}
+
+}

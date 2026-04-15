@@ -1,0 +1,22 @@
+package practice6_09.sec06.exam01;
+
+public class Car {
+	
+	String model;
+	boolean start;
+	int speed;
+	
+	Car(){
+		
+	}
+	Car(String model, int speed){
+		this(model,true,400);
+	}
+	
+	Car(String model, boolean start , int speed){
+		this.model = model;
+		this.start = start;
+		this.speed = speed;
+	}
+
+}

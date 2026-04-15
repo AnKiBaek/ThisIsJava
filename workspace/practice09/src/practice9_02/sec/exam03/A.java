@@ -1,0 +1,34 @@
+package practice9_02.sec.exam03;
+
+public class A {
+	
+	//method1 안에 B 클래스(로컬클래스) 생성 및 var , arg 변수 출력
+	public void method1(int arg) {
+		int var =1;
+		class B{
+			public void method() {
+				//arg = 3; or var = 3;
+				System.out.println(arg);
+				System.out.println(var);
+			}
+		}
+		
+		System.out.println(var);
+		System.out.println(arg);
+		
+		//arg =3; or var =3;
+		//로컬클래스에서 아우터클래스의 활용이 생긴다면.
+		//로컬클래스에서는 아우터 클래스의 변수의 값이 변경될수없다.
+		//final 변수 특성을 가지기 때문이며 이로인해 외부에서도 값을 변경할수없다.
+		//즉 읽기전용이다.
+		
+	}
+	
+	public static void main(String[] args) {
+		A a = new A();
+		a.method1(1);
+		
+		
+	}
+
+}

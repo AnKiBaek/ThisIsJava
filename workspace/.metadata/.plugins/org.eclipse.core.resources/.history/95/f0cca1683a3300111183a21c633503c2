@@ -1,0 +1,12 @@
+package practice8_06.sec06;
+
+public interface RemoteControl {
+
+	int MAX_VOLUME = 10;
+	int MIN_VOLUME = 0;
+	
+	void setVol();
+	void setMute();
+	void turnOn();
+	void turnOff();
+}

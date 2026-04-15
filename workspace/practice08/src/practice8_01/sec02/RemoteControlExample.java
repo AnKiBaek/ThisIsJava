@@ -1,0 +1,15 @@
+package practice8_01.sec02;
+
+public class RemoteControlExample {
+
+	public static void main(String[] args) {
+		// 인터페이스 변수 rc Television으로 객체화
+		RemoteControl rc = new Television();
+
+		rc.turnOn();
+		rc = new Audio();
+		
+		rc.turnOn();
+	}
+
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="java.lang.Class">
+		<item key="selection" value="package practice5_3.sec10;"/>
+		<list key="findhistory">
+			<item value="package practice5_3.sec10;"/>
+			<item value="messageQueue.offer(new Message(&quot;sendMail&quot;,&quot;홍길동&quot;));"/>
+			<item value="F"/>
+		</list>
+	</section>
+</section>

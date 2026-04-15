@@ -1,0 +1,13 @@
+package practice9_08.sec07.exam01;
+
+public class Car {
+
+	private Tire tire1 = new Tire();
+	private Tire tire2 = new Tire() {
+		@Override
+		public void roll() {
+			// TODO Auto-generated method stub
+		System.out.println("1번 익명객체 바퀴가 굴러갑니다.");
+		}
+	};
+}

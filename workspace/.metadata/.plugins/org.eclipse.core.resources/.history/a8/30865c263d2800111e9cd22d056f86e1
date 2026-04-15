@@ -1,0 +1,17 @@
+package practice5_3.sec04;
+
+public class GarbageObjectExample {
+
+	public static void main(String[] args) {
+		
+		String hobby = "여행";
+		//객체를 null 처리해버려서 변수와 객체의 연결고리를 끊어버림
+		hobby = null;
+		
+		
+		System.out.println(hobby);
+		System.out.println(System.identityHashCode(hobby));
+
+	}
+
+}

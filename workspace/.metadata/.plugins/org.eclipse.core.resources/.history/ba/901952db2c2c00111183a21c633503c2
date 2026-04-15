@@ -1,0 +1,17 @@
+package practice6_01.sec06.exam01;
+
+public class CalculatorExample {
+
+	public static void main(String[] args) {
+		Calculator cal = new Calculator();
+		
+		cal.powerOn();
+		
+		
+		
+		
+		cal.powerOff();
+
+	}
+
+}

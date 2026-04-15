@@ -1,0 +1,33 @@
+package practice9_02.sec07.exam01;
+
+public class Car {
+
+	// 1.  Tire 클래스타입 필드 익명객체화 방식
+	private Tire tire1 =  new Tire();
+	private Tire tire2 = new Tire() {
+		@Override
+		public void roll() {
+			System.out.println("익명객체1 Tire 객체가 굴러갑니다.");
+		};
+	};
+	
+	// 호출시 출력
+	public void run1() {
+		tire1.roll();
+		tire2.roll();
+	}
+	
+	// 메서드에서 익명객체화방식사용
+	public void run2() {
+		Tire tire = new Tire() {
+			@Override
+			public void roll() {
+				System.out.println("익명객체2 Tire 객체가 굴러갑니다.");
+			}
+		};
+	}
+	
+	public void run3(Tire tire) {
+		tire.roll();
+	}
+}

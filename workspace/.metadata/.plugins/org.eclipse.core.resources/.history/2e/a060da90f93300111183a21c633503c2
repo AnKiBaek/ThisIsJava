@@ -1,0 +1,17 @@
+package practice9_06.sec.exam03;
+
+public class A {
+	public void method1(int arg) {
+		int var = 10;
+		class B {
+			public void method2() {
+				System.out.println(var);
+				System.out.println(arg);
+			}
+		}
+//	var =3 ;
+//	arg = 3;
+		System.out.println(var);
+		System.out.println(arg);
+	}
+}

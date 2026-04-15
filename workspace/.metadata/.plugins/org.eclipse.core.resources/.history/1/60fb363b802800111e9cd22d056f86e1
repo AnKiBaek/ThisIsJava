@@ -1,0 +1,19 @@
+package practice5_4.sec06;
+
+public class ArraysCreateByExample {
+
+	public static void main(String[] args) {
+		int[] arr1 = new int[3];
+		
+		for(int i : arr1) {
+			System.out.println(i);
+		}
+		
+		for(int i = 0; i< arr1.length ;i++) {
+			arr1[i] = i+1;
+			System.out.println(arr1[i]);
+		}
+
+	}
+
+}

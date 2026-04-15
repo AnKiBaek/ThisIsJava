@@ -1,0 +1,10 @@
+package practice7_05.sec08.exam02;
+
+public class Fox extends Animal{
+
+	@Override
+	public void eat() {
+		// TODO Auto-generated method stub
+		System.out.println("여우가 음식을 먹습니다.");
+	}
+}

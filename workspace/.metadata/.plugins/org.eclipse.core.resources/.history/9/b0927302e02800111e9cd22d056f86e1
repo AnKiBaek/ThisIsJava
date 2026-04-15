@@ -1,0 +1,18 @@
+package practice5_3.sec06;
+
+public class ArrayMethodExample {
+
+	private void printIntArr(int[]arr) {
+		for(int a : arr) {
+			System.out.println(a);
+		}
+	}
+	public static void main(String[] args) {
+		ArrayMethodExample ex = new ArrayMethodExample();
+		//ArrayMethodExample 객체화이후
+		//메서드를 호출하는데,매개변수선언부에 정수배열을 넣어줘야한다.
+		ex.printIntArr(new int[] {2,1,2,1,3});
+
+	}
+
+}

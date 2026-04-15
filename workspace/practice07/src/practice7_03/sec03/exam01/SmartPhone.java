@@ -1,0 +1,12 @@
+package practice7_03.sec03.exam01;
+
+public class SmartPhone extends Phone{
+	
+	public SmartPhone(String model, String color) {
+		super();
+		this.model = model;
+		this.color = color;
+	}
+	
+
+}

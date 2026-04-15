@@ -1,0 +1,21 @@
+package practice5_2.sec04;
+
+public class NullPointExceptionExample {
+
+	public static void main(String[] args) {
+		String[] strArr =new String[2];
+		
+		strArr[0]  ="dsdsaas";
+		strArr[1]  ="dsdsaas";
+		
+		for(String strVal : strArr) {
+			System.out.println(strVal);
+		}
+		
+		
+		System.out.println(strArr[0] == strArr[1]);
+		System.out.println(System.identityHashCode(strArr[0]));
+		System.out.println(System.identityHashCode(strArr[1]));
+	}
+
+}

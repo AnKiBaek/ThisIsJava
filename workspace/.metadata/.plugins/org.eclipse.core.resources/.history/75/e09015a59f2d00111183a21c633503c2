@@ -1,0 +1,30 @@
+package practice6_08.sec08.exam03;
+
+public class Cellphone {
+
+	int bt;
+	
+	void setBt(int bt) {
+		this.bt = bt;
+	}
+	
+	boolean power() {
+		if(bt == 0) {
+			System.out.println("배터리 x"); return false;
+		}
+		System.out.println("배터리 o"); return true;
+	}
+	
+	void btLow() {
+		while(true) {
+			if(bt>0) {
+				System.out.println("실행.."+bt);
+				bt--;
+			} else { 
+				System.out.println("종료"+ bt); return;
+			}
+				
+		}
+		
+	}
+}

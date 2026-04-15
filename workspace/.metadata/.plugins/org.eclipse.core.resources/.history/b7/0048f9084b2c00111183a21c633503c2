@@ -1,0 +1,17 @@
+package practice6_10.sec06.exam01;
+
+public class PhoneExample {
+
+	public static void main(String[] args) {
+		Phone phone = new Phone();
+		
+		Phone phone2 = new Phone(40,10000);
+		
+		System.out.println(phone2.model);
+		System.out.println(phone2.price);
+		System.out.println(phone2.sale);
+		
+
+	}
+
+}

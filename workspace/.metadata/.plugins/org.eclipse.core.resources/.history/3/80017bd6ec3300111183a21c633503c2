@@ -1,0 +1,9 @@
+package practice9_04.sec.exam01;
+
+public class A {
+public static class B{
+	public void methodB() {
+		System.out.println("methodB실행");
+	}
+}
+}

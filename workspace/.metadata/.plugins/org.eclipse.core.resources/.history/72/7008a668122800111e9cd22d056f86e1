@@ -1,0 +1,28 @@
+package ch02.sec07;
+
+public class PromotionExample {
+
+	public static void main(String[] args) {
+
+		int hour = 3;
+		int minte =5;
+		System.out.println(hour+"시간"+minte+"분");
+		
+		int totalMinute = hour * 60 + minte;
+		
+		System.out.println(totalMinute+"분");
+		
+		//byte -> int 자동 형변환 
+		byte byteVal = 10;
+		int intVal = byteVal;
+		System.out.println("byteVal: "+ intVal);
+		
+		//char -> int 자동 형변환
+		char charVal = '가';
+		int intVal2 = charVal;
+		
+		System.out.println("가 의 유니코드: "+ intVal2);
+		
+	}
+
+}

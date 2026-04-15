@@ -1,0 +1,36 @@
+package practice6_03.sec08.exam03;
+
+public class Car {
+	
+	//상태값 저장 필드선언
+	int gas;
+	
+	//Setter
+	void setGas(int gas) {
+		this.gas = gas;
+	}
+	
+	//가스있는지 없는지 검사해서 참, 거짓 반환 하는 메서드
+	boolean isLeftGas() {
+		if(gas== 0) {
+			System.out.println("가스가 없습니다.");
+			return false;
+		}
+		System.out.println("가스가있습니다.");
+		return true;
+	}
+	
+	void run() {
+		
+		while(true) {
+			if(gas>0) {
+				System.out.println("달립니다. 남은가스: "+ gas);
+				gas--;
+			}
+			System.out.println("멈춥니다. 남은가스: "+gas);
+			return
+		}
+		
+	}
+
+}

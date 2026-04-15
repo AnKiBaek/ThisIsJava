@@ -1,0 +1,10 @@
+package ch17.sec10;
+
+public class AggregateExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

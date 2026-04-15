@@ -1,0 +1,9 @@
+package practice7_05.sec08.exam02;
+
+public class Zooger {
+	
+	public void giveFood(Animal animal) {
+		animal.eat();
+	}
+
+}

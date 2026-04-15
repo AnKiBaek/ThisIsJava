@@ -1,0 +1,8 @@
+package practice7_03.sec04.exam02;
+
+public class SuperSonicAirPlane extends AirPlane{
+
+	public static final int NOMAL =1;
+	public static final int SUPERSONIC =2;
+	
+}

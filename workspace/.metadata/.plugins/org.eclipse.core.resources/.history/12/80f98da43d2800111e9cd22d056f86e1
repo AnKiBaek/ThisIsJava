@@ -1,0 +1,50 @@
+package practice5_3.sec04;
+
+public class GarbageObjectExample {
+
+	public static void main(String[] args) {
+		
+		String hobby = "여행";
+		//객체를 null 처리해버려서 변수와 객체의 연결고리를 끊어버림
+		hobby = null;
+		
+		// null 출력
+		System.out.println(hobby);
+		// 0 출력(번지)
+		System.out.println(System.identityHashCode(hobby));
+
+		
+		String str1 = "기백";
+		String str2 =  str1;
+		
+		//객체 한개를 두개의 변수가 참조중
+		System.out.println(str2);
+		
+		//str1 참조 끊음
+		str1 = null;
+		//str2 은 살아있어서 쓰레기객체는 아님
+		System.out.println(str2);
+		str2 = str1;
+		
+		
+		System.out.println(str2);
+		
+		System.out.println(str1 == str2);
+		System.out.println(str1.equals(str2));
+		System.out.println(System.identityHashCode(str2));
+		System.out.println(System.identityHashCode(str1));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

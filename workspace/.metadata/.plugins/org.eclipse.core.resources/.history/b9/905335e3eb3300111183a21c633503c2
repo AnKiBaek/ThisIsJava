@@ -1,0 +1,23 @@
+package practice9_03.sec.exam01;
+
+public class A {
+	
+	
+	public void method() {
+		System.out.println("methodA 에서 실행한 B 클래스 객체화 및 methodB 호출 ");
+		B b = new B();
+		b.methodB();
+	}
+	
+	
+	A(){
+		B b = new B();
+		b.methodB();
+	}
+
+	public class B {
+		public void methodB() {
+			System.out.println("B클래스 메서드");
+		}
+	}
+}

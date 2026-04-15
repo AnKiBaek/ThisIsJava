@@ -1,0 +1,20 @@
+package practice5_2.sec05;
+
+public class ReturnExample {
+
+	private double sosoo(int x) {
+		
+		(double)x;
+		return x;
+	}
+	
+	public static void main(String[] args) {
+		
+
+		ReturnExample re = new ReturnExample();
+		
+		double result = re.sosoo(1);
+		System.out.println(result);
+	}
+
+}

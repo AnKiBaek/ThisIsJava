@@ -1,0 +1,18 @@
+package practice5_7.sec06;
+
+public class ArrayCreateByExample {
+
+	public static void main(String[] args) {
+		int[] arr1 = new int[3];
+		for(int i : arr1) {
+			System.out.println(i);
+		}
+		double[] arr2 = new double[3];
+		for(double d : arr2) {
+			System.out.println(d);
+		}
+		
+
+	}
+
+}

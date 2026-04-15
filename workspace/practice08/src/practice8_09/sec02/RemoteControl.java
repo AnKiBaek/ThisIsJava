@@ -1,0 +1,7 @@
+package practice8_09.sec02;
+
+public interface RemoteControl {
+	
+	public void turnOn();
+
+}

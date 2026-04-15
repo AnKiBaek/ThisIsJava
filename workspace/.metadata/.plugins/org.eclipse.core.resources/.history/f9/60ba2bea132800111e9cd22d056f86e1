@@ -1,0 +1,14 @@
+package ch02_2.sec07;
+
+public class PromotionExample {
+
+	public static void main(String[] args) {
+		int hour = 3;
+		int min  = 13;
+		
+		System.out.println(hour + "시간" + min + "분");
+		
+
+	}
+
+}

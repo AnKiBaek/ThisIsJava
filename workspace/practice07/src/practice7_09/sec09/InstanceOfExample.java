@@ -1,0 +1,52 @@
+package practice7_09.sec09;
+class Song {
+	public void play() {
+		System.out.println("노래가 나옵니다.");
+	}
+	
+}
+
+class HipHop extends Song {
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+	System.out.println("힙합이 나옵니다.");
+	}
+	
+	public void rap() {
+		System.out.println("내인생 Trippy 해");
+	}
+}
+
+class Balad extends Song {
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+	System.out.println("발라드가 나옵니다.");
+	}
+	
+	public void sing() {
+		System.out.println("떠나는그대여 울지말아요");
+	}
+}
+public class InstanceOfExample {
+	
+	public static void main(String[] args) {
+		Song song =new HipHop();
+		
+		song.play();
+		
+		if(song instanceof HipHop hipHop) {
+			hipHop.rap();
+		}
+		
+		Song song2 = new Balad();
+		song2.play();
+		if(song2 instanceof Balad balad) {
+			balad.sing();
+		}
+	}
+	
+	
+
+}

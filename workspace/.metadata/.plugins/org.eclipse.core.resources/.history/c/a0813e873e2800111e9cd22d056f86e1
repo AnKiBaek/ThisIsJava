@@ -1,0 +1,21 @@
+package ch05.sec04;
+
+public class NullPointerExeptionExample {
+
+	public static void main(String[] args) {
+		int[]intArr = new int[2];
+		intArr[0] =10;
+		intArr[1] =10;
+		
+		for(int val : intArr) {
+			System.out.println(val);
+		}
+
+		
+		String str=null;
+		//System.out.println("총 문자수 : "+ str.length());
+		
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package practice6_01.sec15;
+
+public class SingletonExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Singleton object1 = Singleton.getInstance();
+		Singleton object2 = Singleton.getInstance();
+		
+		System.out.println(object1 == object2);
+		
+		System.out.println(System.identityHashCode(object2));
+		System.out.println(System.identityHashCode(object1));
+
+	}
+
+}

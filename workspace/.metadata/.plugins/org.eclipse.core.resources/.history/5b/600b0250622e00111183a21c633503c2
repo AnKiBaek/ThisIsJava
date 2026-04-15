@@ -1,0 +1,12 @@
+package practice6_05.sec15;
+
+public class Singleton {
+	private static Singleton singleton = new Singleton();
+	
+	private Singleton() {}
+	
+	public staticSingleton getInstance() {
+		return singleton;
+	}
+
+}

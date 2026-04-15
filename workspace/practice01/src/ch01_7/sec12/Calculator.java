@@ -1,0 +1,14 @@
+package ch01_7.sec12;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+
+		int x = 30;
+		int y = 50;
+		int first = 300;
+		
+		System.out.println(x+y+first);
+	}
+
+}

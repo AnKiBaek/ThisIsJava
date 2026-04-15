@@ -1,0 +1,28 @@
+package ch01_7.sec09;
+
+public class Study {
+
+	public static void main(String[] args) {
+		String rl1 = "rlqor";
+		String rl2 = "rlqor";
+		String rl3 = new String("기백");
+		String rl4 = new String("기백");
+		
+		//출력
+		System.out.println(rl1);
+		System.out.println(rl2);
+		System.out.println(rl3);
+		System.out.println(rl4);
+		
+		// == 연산자 비교 ( 객체주소기반 )
+		System.out.println(rl1 == rl2);
+		System.out.println(rl3 == rl4);
+		
+		
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,35 @@
+ package ch06.sec14;
+
+public class Car {
+	
+	//필드선언
+	private int speed;
+	private boolean stop;
+	
+	//Getter , Setter
+	public int getSpeed() {
+		return speed;
+	}
+	//스피드가 0보다 작을경우 0으로 초기화
+	public void setSpeed(int speed) {
+		if(speed<0) {
+			speed=0;
+		} else {
+			this.speed = speed;
+		}	
+	}
+	public boolean isStop() {
+		return stop;
+	}
+	public void setStop(boolean stop) {
+		this.stop = stop;
+		if(stop==true) {
+			this.speed=0;
+		}
+	}
+	
+	
+	
+	
+
+}

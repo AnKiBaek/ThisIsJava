@@ -1,0 +1,22 @@
+package practice6_05.sec14;
+
+public class Car {
+	int speed;
+	boolean stop;
+	
+	public int getSpeed() {
+		return speed;
+	}
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+	public boolean isStop() {
+		return stop;
+	}
+	public void setStop(boolean stop) {
+		this.stop = stop;
+	}
+	
+	
+
+}

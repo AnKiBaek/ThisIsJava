@@ -1,0 +1,22 @@
+package practice6_05.sec06.exam01;
+
+public class BookInfo {
+	
+	void powerOn() {
+		System.out.println("전원을 켭니다.");
+	}
+	
+	void powerOff() {
+		System.out.println("전원을 끕니다.");
+	}
+	
+	String author(String author) {
+		return author;
+	}
+	
+	String name(String name) {
+		return name;
+	}
+
+
+}

@@ -1,0 +1,15 @@
+package ch01_5.sec09;
+
+public class Study {
+
+	public static void main(String[] args) {
+		
+		String d1 = "음";
+		String d2 = "음";
+		String d3 = new String("음");
+		String d4 = new String("음");
+		
+
+	}
+
+}

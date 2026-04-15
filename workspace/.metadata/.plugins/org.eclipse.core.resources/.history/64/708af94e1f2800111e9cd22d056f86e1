@@ -1,0 +1,47 @@
+package ch02_5.sec07;
+
+public class PromotionExample {
+
+	public static void main(String[] args) {
+		int hour = 3;
+		int min = 10;
+		
+		int totalmin = hour *60 + min ;
+		
+		System.out.println(totalmin);
+		
+		//byte -> int
+		byte  bVal = 10;
+		int iVal =bVal;
+		
+		//char -> int
+		char cVal = '차';
+		int iVal2 = cVal;
+		
+		System.out.println(iVal2);
+		
+		//short -> int
+		short sVal =1233;
+		
+		int iVal3 = sVal;
+		
+		System.out.println(sVal);
+		
+		//int -> long
+		int iVal4 = 125;
+		
+		long lVal = iVal4;
+		
+		System.out.println(lVal);
+		
+		//long -> float 
+		lVal =1323213;
+		
+		float fVal = lVal;
+		
+		System.out.println(fVal);
+				
+
+	}
+
+}

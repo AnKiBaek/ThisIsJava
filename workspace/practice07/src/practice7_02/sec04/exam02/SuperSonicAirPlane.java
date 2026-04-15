@@ -1,0 +1,22 @@
+package practice7_02.sec04.exam02;
+
+public class SuperSonicAirPlane extends AirPlane{
+
+	//상수 선언
+	public static final int NOMAL = 1;
+	public static final int SUPER_SONIC = 2;
+	
+	//상태필드
+	public int flyMode = NOMAL;
+	
+	@Override
+	public void fly() {
+		if(flyMode == SUPER_SONIC) {
+			System.out.println("초음속 비행합니다.");
+		} else {
+			super.fly();
+		}
+
+	}
+	
+}

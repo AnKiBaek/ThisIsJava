@@ -1,0 +1,42 @@
+package practice6_10.sec08.exam03;
+
+public class Car {
+	
+	//필드선언을 하는이유는 특정클래스에서  공통적으로 쓰이는요소를 지정하기 위해서이다.
+	
+	// 필드변수 (멤버변수) 를 가지고 이런저런메서드를 만들면 main 스레드에서는 객체화이후 
+	// 호출만해서 클래스의 데이터만 변경시킨다.
+	
+	//클래스의 책임이란 즉 클래스에 속한 요소 ( 멤버변수)의 직접적인 처리를통해서 객체의 변화를 주는 행위이며
+	//이는 개발자들간의 약속이다
+	
+	//객체지향 구현기법중하나이면서 가장 기본이되고 본질이다. 하지만 어렵다.
+	
+	 int gas;
+	 
+	 void setGas(int gas) {
+		 this.gas = gas;
+	 }
+	 
+	 boolean isLeftGas() {
+		 if(gas==0) {
+			 System.out.println("연료가 없습니다.");
+			 return false;
+		 }
+		 System.out.println("연료가 있습니다.");
+		 return true;
+	 }
+	 
+	 void run() {
+		while(true) {
+			if(gas>0) {
+				System.out.println("달립니다 남은연료: " + gas);
+				gas --;
+			} else {
+				System.out.println("멈춥니다 남은연료: " + gas);
+				return;
+			}
+		}
+	 }
+
+}

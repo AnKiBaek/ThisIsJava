@@ -1,0 +1,16 @@
+package practice6_04.sec15;
+
+public class SingletonExample {
+
+	public static void main(String[] args) {
+		
+		//getInstance() 로 객체 주입받기
+		Singleton obj1 = Singleton.getInstance();
+		Singleton obj2 = Singleton.getInstance();
+		
+		//비교
+		System.out.println(obj1==obj2);
+
+	}
+
+}

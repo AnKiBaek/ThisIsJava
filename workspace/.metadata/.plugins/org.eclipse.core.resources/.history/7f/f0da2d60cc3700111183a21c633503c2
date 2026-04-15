@@ -1,0 +1,12 @@
+package practice9_04.sec07.exam01;
+
+public class Car {
+
+	private Tire tire1 = new Tire();
+	private Tire tire2 = new  Tire() {
+		
+    public void roll() {
+	   System.out.println("익명객체 1");
+    };		
+	}
+}

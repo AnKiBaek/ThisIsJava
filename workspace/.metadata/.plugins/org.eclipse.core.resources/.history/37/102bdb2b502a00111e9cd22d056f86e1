@@ -1,0 +1,33 @@
+package practice5_2.sec10;
+
+public class AdvancedForExample {
+	
+	
+	int sum;
+	
+	int sum(int[]arr) {
+		
+		for(int i : arr) {
+			sum += i;
+		}
+		return sum;
+	}
+
+	public static void main(String[] args) {
+		
+		
+		int[] scores = {100,100,20,40,50};
+		
+		AdvancedForExample ex = new AdvancedForExample();
+		
+		int sum = ex.sum(scores);
+		
+		System.out.println(sum);
+		
+		
+		
+		
+
+	}
+
+}

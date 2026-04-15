@@ -1,0 +1,14 @@
+package practice6_09.sec08.exam03;
+
+import practice6_08.sec08.exam03.Car;
+
+public class CarExample {
+
+	public static void main(String[] args) {
+		Car car = new Car();
+		
+		
+
+	}
+
+}

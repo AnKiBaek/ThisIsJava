@@ -1,0 +1,56 @@
+package practice7_05.sec09;
+class Animal {
+	public void sound() {
+		System.out.println("동물이 소리를 냅니다.");
+	}
+	public void eat() {
+		System.out.println("동물이 음식을 먹습니다.");
+	}
+}
+
+class Tiger extends Animal{
+	@Override
+	public void sound() {
+		// TODO Auto-generated method stub
+		System.out.println("어흥");
+	}
+	@Override
+	public void eat() {
+		// TODO Auto-generated method stub
+		System.out.println("호랑이가 고기를 먹습니다.");
+	}
+	public void rideTree() {
+		System.out.println("호랑이가 나무를 탑니다.");
+	}
+}
+
+class Coala extends Animal{
+	@Override
+	public void eat() {
+		// TODO Auto-generated method stub
+	System.out.println("코알라가 유칼립투스 잎을 먹습니다.");
+	}
+	
+	@Override
+	public void sound() {
+		// TODO Auto-generated method stub
+		System.out.println("어어...");
+	}
+	public void hangTree() {
+		System.out.println("코알라가 나무에 매달립니다.");
+	}
+}
+public class InstanceOfExample {
+	public static void main(String[] args) {
+		Animal animal = new Tiger();
+		animal.eat();
+		
+		if(animal instanceof Tiger tiger) {
+			tiger.rideTree();
+		}
+		
+		Animal animal2 = new Coala();
+		animal2.eat();
+	}
+
+}
